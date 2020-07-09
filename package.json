@@ -12,8 +12,11 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "bootstrap": "^5.0.0-alpha1",
+    "bootstrap-icons": "^1.0.0-alpha5",
     "compression": "^1.7.1",
     "polka": "next",
+    "popper.js": "^1.16.1",
     "sirv": "^0.4.0"
   },
   "devDependencies": {
