@@ -12,6 +12,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "@rollup/plugin-typescript": "^5.0.1",
     "bootstrap": "^5.0.0-alpha1",
     "bootstrap-icons": "^1.0.0-alpha5",
     "compression": "^1.7.1",
@@ -35,7 +36,6 @@
     "rollup": "^2.3.4",
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^5.3.0",
-    "rollup-plugin-typescript2": "^0.27.1",
     "sapper": "^0.27.0",
     "svelte": "^3.0.0",
     "svelte-preprocess": "^4.0.6",

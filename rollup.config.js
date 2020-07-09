@@ -7,7 +7,7 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import autoPreprocess from "svelte-preprocess";
-import typescript from "rollup-plugin-typescript2";
+import typescript from "@rollup/plugin-typescript";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -38,7 +38,7 @@ export default {
 			typescript(),
 
 			legacy && babel({
-				extensions: ['.js', '.mjs', '.html', '.svelte'],
+				extensions: ['.js', '.mjs', '.html', '.svelte', '.ts'],
 				babelHelpers: 'runtime',
 				exclude: ['node_modules/@babel/**'],
 				presets: [
